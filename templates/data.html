@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​We turn your design into a live Webflow project.">
+    <meta name="description" content="">
+    <title>URL Scan</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='nicepage.css')}}" media="screen">
+<link rel="stylesheet" href="{{url_for('static',filename='789-1.css')}}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{url_for('static',filename='jquery-1.9.1.min.js')}}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{url_for('static',filename='nicepage.js')}}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.12.11, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#537459">
+    <meta property="og:title" content="789 1">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="https://website2095492-1.nicepage.io/789-1.html?version=50c48f2f-b5f9-4987-b217-740e21f04742" data-home-page-title="789 1" class="u-body u-xl-mode">
+    <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-e9ba">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">URL Scan</h2>
+        <p class="u-text u-text-default u-text-2">Check url Legitimate or Phishing</p>
+        <div class="u-align-center u-container-style u-group u-radius-30 u-shape-round u-white u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <img class="u-image u-image-default u-image-1" src="{{url_for('static',filename='images/1318013-AlvinChandraHadiyanto-iconURLScan.png')}}" alt="" data-image-width="267" data-image-height="134">
+            <div class="u-form u-form-1">
+              <form action="/data" method="POST">
+                
+                
+                <div class="u-form-group">
+                  <label for="message-4c18" class="u-label u-text-black">URL</label>
+                  <input placeholder="Enter your url" rows="4" cols="50" id="message-4c18" name="Url" class="u-border-2 u-border-palette-4-light-3 u-input u-input-rectangle u-palette-4-light-3 u-radius-10" required="required" type="text">
+                </div>
+                <div class="u-align-right u-form-group u-form-submit">
+                  <a href="#" class="u-active-palette-4-light-1 u-border-5 u-border-active-palette-4-light-1 u-border-hover-palette-4-light-1 u-border-palette-4-base u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-4-light-1 u-palette-4-base u-radius-10 u-btn-1">Submit</a>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                <input type="hidden" value="" name="recaptchaResponse">
+              </form>
+            </div>
+			{% for form_data,hasil in zip(data["form_data"],data["hasil"]) %}
+            <div class="u-container-style u-expanded-width u-group u-palette-3-light-1 u-radius-20 u-shape-round u-group-2">
+              <div class="u-container-layout u-container-layout-2">
+                <h5 class="u-text u-text-default u-text-3">URL:&nbsp;</h5>
+                <div class="u-container-style u-expanded-width u-group u-radius-10 u-shape-round u-white u-group-3">
+                  <div class="u-container-layout u-container-layout-3">
+                    <h5 class="u-text u-text-default u-text-4">{{form_data}}</h5>
+                  </div>
+                </div>
+                <h5 class="u-text u-text-default u-text-5">Result:</h5>
+                <div class="u-align-center u-container-style u-expanded-width u-group u-radius-10 u-shape-round u-white u-group-4">
+                  <div class="u-container-layout u-container-layout-4">
+                    <h5 class="u-align-center u-text u-text-default u-text-6">{{hasil}}</h5>
+                  </div>
+                </div>
+                <a href="/" class="u-btn u-btn-round u-button-style u-radius-10 u-btn-2">Clear Result</a>
+              </div>
+            </div>
+			{% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
+        <span>HTML Designer</span>
+      </a>. 
+    </section>
+  </body>
+</html>
