@@ -4,7 +4,7 @@ https://repository.ithb.ac.id/id/eprint/56/
 # Source Dataset
 https://data.mendeley.com/datasets/72ptz43s9v/1
 
-# Google Colabs untuk training model
+# Google Colabs for training model
 https://drive.google.com/drive/folders/15nmL207mq1NoWPDBOf3dqjsEE-8L_k7Z?usp=sharing
 
 # NOTE: This is not perfect program for know phishing site
